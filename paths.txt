@@ -1,0 +1,152 @@
+SHORTEST PATHS:
+=======================
+****************
+0: car, automobile
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+1: gem, jewel
+Path: [['gem', 'jewel']]
+No. of Paths: 1
+Distance: 1
+****************
+2: journey, voyage
+Path: [['journey', 'voyage']]
+No. of Paths: 1
+Distance: 1
+****************
+3: boy, lad
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+4: coast, shore
+Path: [['coast', 'slope', 'geological_formation', 'shore']]
+No. of Paths: 1
+Distance: 3
+****************
+5: asylum, madhouse
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+6: magician, wizard
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+7: midday, noon
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+8: furnace, stove
+Path: [['furnace', 'chamber', 'enclosure', 'area', 'structure', 'artifact', 'instrumentality', 'device', 'heater', 'stove']]
+No. of Paths: 1
+Distance: 9
+****************
+9: food, fruit
+Path: [['food', 'content', 'cognition', 'psychological_feature', 'event', 'happening', 'ending', 'result', 'consequence', 'fruit']]
+No. of Paths: 1
+Distance: 9
+****************
+10: bird, cock
+Path: [['bird', 'cock']]
+No. of Paths: 1
+Distance: 1
+****************
+11: bird, crane
+Path: [['bird', 'aquatic_bird', 'wading_bird', 'crane']]
+No. of Paths: 1
+Distance: 3
+****************
+12: tool, implement
+Path: [['tool', 'implement']]
+No. of Paths: 1
+Distance: 1
+****************
+13: brother, monk
+Path: [['brother', 'Brother', 'monk']]
+No. of Paths: 1
+Distance: 2
+****************
+14: lad, brother
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+15: crane, implement
+Path: [['crane', 'lifting_device', 'device', 'instrumentality', 'implement']]
+No. of Paths: 1
+Distance: 4
+****************
+16: journey, car
+Path: [['journey', 'travel', 'motion', 'change', 'action', 'act', 'event', 'psychological_feature', 'abstraction', 'entity', 'physical_entity', 'object', 'whole', 'artifact', 'instrumentality', 'container', 'wheeled_vehicle', 'car']]
+No. of Paths: 1
+Distance: 17
+****************
+17: monk, oracle
+Path: [['monk', 'religious', 'religious_person', 'person', 'organism', 'living_thing', 'whole', 'artifact', 'structure', 'building', 'place_of_worship', 'shrine', 'oracle']]
+No. of Paths: 1
+Distance: 12
+****************
+18: cemetery, woodland
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+19: food, rooster
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+20: coast, hill
+Path: [['coast', 'slope', 'geological_formation', 'natural_elevation', 'hill']]
+No. of Paths: 1
+Distance: 4
+****************
+21: forest, graveyard
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+22: shore, woodland
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+23: monk, slave
+Path: [['monk', 'religious', 'religious_person', 'person', 'slave']]
+No. of Paths: 1
+Distance: 4
+****************
+24: coast, forest
+Path: [['coast', 'slope', 'geological_formation', 'object', 'land', 'forest']]
+No. of Paths: 1
+Distance: 5
+****************
+25: lad, wizard
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+26: chord, smile
+Path: [['chord', 'straight_line', 'line', 'shape', 'attribute', 'abstraction', 'communication', 'visual_communication', 'gesture', 'facial_expression', 'smile']]
+No. of Paths: 1
+Distance: 10
+****************
+27: glass, magician
+Path: [['glass', 'solid', 'matter', 'physical_entity', 'causal_agent', 'person', 'entertainer', 'performer', 'magician']]
+No. of Paths: 1
+Distance: 8
+****************
+28: rooster, voyage
+Path: [None]
+No. of Paths: 1
+Distance: 0
+****************
+29: noon, string
+Path: [['noon', 'hour', 'clock_time', 'reading', 'datum', 'information', 'cognition', 'psychological_feature', 'abstraction', 'group', 'collection', 'string']]
+No. of Paths: 1
+Distance: 11
