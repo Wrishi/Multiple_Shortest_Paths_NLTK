@@ -35,24 +35,52 @@ test_words = [
 
 
 count = 0
-with open("paths.txt","w") as path_file:
-        path_file.write("SHORTEST PATHS:\n=======================\n")
+f = "paths_table.txt"
+with open(f, "w") as path_file:
+    path_file.write("Words".ljust(25) + "Paths".rjust(8) + "Length".rjust(10) + "Nodes".rjust(8))
 for t in test_words:
-    print("****************")
-    print(count, ': ', t[0], ', ', t[1])
-    with open("paths.txt","a") as path_file:
-        path_file.write("****************\n"+ str(count) +": " + t[0] + ", " + t[1] + "\n")
-    try:
-        start = t[0]
-        end = t[1]
-        d, n, shortest_paths = msd.get_shortest_paths(start, end)
-        print("Path: ", shortest_paths)
-        print("No. of Paths: ", n)
-        print("Distance: ", d)
-        with open("paths.txt","a") as path_file:
-            path_file.write("Path: " + str(shortest_paths) + "\nNo. of Paths: " + str(n) + "\nDistance: " + str(d) + "\n")
-        count += 1
-    except AttributeError:
-        print("AttributeError!")
-        count += 1
-        continue
+    start = t[0]
+    end = t[1]
+
+    min = 1000
+    max = 0
+    shortest_path = None
+    longest_path = None
+    path_dict = msd.get_shortest_paths(start, end, True)
+
+    # Calculating nodes of graph in which all synset nodes are
+    # traversed via the shortest paths
+    nodes = []
+    for d in path_dict:
+        if path_dict[d][0]!= None and path_dict[d][0] < min:
+            min = path_dict[d][0]
+            shortest_path = path_dict[d]
+        if path_dict[d][0]!= None and path_dict[d][0] > max:
+            max = path_dict[d][0]
+            longest_path = path_dict[d]
+
+        for p in path_dict[d][2]:
+            if p != None:
+                for node in p:
+                    if node not in nodes:
+                        nodes.append(node)
+            else:
+                ws = d.split("<-->")
+                print(ws)
+                # To add a word that may be disconnected
+                for w in ws:
+                    if w not in nodes:
+                        nodes.append(w)
+
+
+    c = len(nodes)
+    print("Shortest Path:", shortest_path)
+    print("Nodes: ", c)
+    print("All paths:", path_dict)
+
+    with open(f, "a") as path_file:
+        path_file.write("\n" + (t[0] + "<-->" + t[1]).ljust(25))
+        path_file.write(str(shortest_path[1]).rjust(8))
+        path_file.write(str(shortest_path[0]).rjust(10) )
+        path_file.write(str(c).rjust(8))
+    count += 1
